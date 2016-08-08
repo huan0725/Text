@@ -1,0 +1,57 @@
+    [ {
+						"menuid" : "10",
+						"icon" : "icon-sys",
+						
+						"menuname" : "基础数据"
+						},
+						 {
+							"menuid" : "111",
+							"menuname" : "基础数据1",
+							"icon" : "icon-nav",
+							"url" : "#"
+						}, 
+						{
+							"menuid" : "113",
+							"menuname" : "基础数据12",
+							"icon" : "icon-nav",
+							"url" : "#"
+						}, 
+						{
+							"menuid" : "115",
+							"menuname" : "基础数据13",
+							"icon" : "icon-nav",
+							"url" : "#"
+						}, 
+						{
+							"menuid" : "117",
+							"menuname" : "基础数据14",
+							"icon" : "icon-nav",
+							"url" : "#"
+						},
+						 {
+							"menuid" : "119",
+							"menuname" : "基础数据15",
+							"icon" : "icon-nav",
+							"url" : "em/enterpriseChannelObtend.action"
+						
+					}, 
+					{
+						"menuid" : "20",
+						"icon" : "icon-sys",
+						"menuname" : "测试一"
+						},
+						{
+							"menuid" : "211",
+							"menuname" : "测试一11",
+							"icon" : "icon-nav",
+							"url" : "#"
+						},
+						 {
+							"menuid" : "213",
+							"menuname" : "测试一22",
+							"icon" : "icon-nav",
+							"url" : "#"
+						} ]
+					
+					
+					

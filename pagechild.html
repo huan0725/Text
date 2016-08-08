@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, maximum-scale=1">
+    <title>
+        Join50Jia
+    </title>
+    <meta name="keywords" content="page1"/>
+
+
+    <script src="js/react.min.js"></script>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.min.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+    <script src="js/react-bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link href="css/index.css"/>
+    <style>
+        /**初始化**/
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td{margin: 0;padding: 0;}
+        body{background: #fff;color: #555;font-size: 14px;font-family: microsoft YaHei, Verdana, Arial, Helvetica, sans-serif;}
+        td, th, caption{font-size: 14px;}
+        h1, h2, h3, h4, h5, h6{font-weight: normal;font-size: 100%;}
+        address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;font-weight: normal;}
+        a{color: #555;text-decoration: none;}
+        a:hover{text-decoration: underline;}
+        img{border: none;}
+        ol, ul, li{list-style: none;}
+        input, textarea, select, button{font: 14px Verdana, Helvetica, Arial, sans-serif;}
+        table{border-collapse: collapse;}
+        html{overflow-y: scroll;}
+        .clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+        .clearfix{*zoom: 1;}
+        .fl{float: left;}
+        .fr{float: right;}
+        /**初始化**/
+
+        /****/
+        .body{margin:0 auto;}
+
+
+        .header{ width:100%;  background: #fff url(images/logo-GB_03.jpg) no-repeat; overflow: hidden;background-size:100%;}
+        .tiaojianBox{ float:left; margin:5px 5px; }
+        .tiaojianBox1{ margin-left:2px;width:33%;}
+        .tiaojianBox2{ width:30%;}
+        .tiaojianBox3{ width:33%;}
+        /**头部导航**/
+        #topMenu>div>a{  height:46px;line-height:46px; font-size:18px;font-weight:700; }
+        /**头部导航**/
+
+
+        /**主体开始**/
+        #mainbox{
+            width:100%;;
+            height:auto;
+            min-height:600px;
+            background:#CCCddd;
+            over-flow:hidden;
+        }
+        /**左侧导航**/
+        #leftSideNav{
+            float:left;
+            width:14%;
+        }
+        #leftSideNav ul{
+            width:90%;
+        }
+        #leftSideNav li{
+            height:50px;
+            line-height:50px;
+            text-align:center;
+            border:1px solid black;
+            margin-bottom:-2px;
+            padding:1px 4px;
+            background:ghostwhite;
+            font-weight:bold;
+        }
+
+
+        /**右侧内容区开始**/
+        #main{
+            float:left;
+            width:86%;
+            padding-top:30px;
+            padding-right:5px;
+        }
+
+        /**表格样式**/
+        #main table { width:100%;}
+        #main table tbody tr{
+            width:100%;
+
+        }
+        #main table  th, #main table  td{
+            text-align:center;
+            border:1px solid #000;
+            padding:2px 4px;}
+        #main table  th{ height:42px;font-weight: bold;font-size:16px;}
+        #main table  td{
+            height:46px;
+            font-weight: normal;
+
+        }
+
+        table {font-weight: bold;}
+        .norderBottom-1{ border-bottom: 1px solid #dddddd;}
+
+
+        /**页码**/
+        .pageBar{ width:405px;height:35px;margin:5px auto;}
+        .pageBar .btn-group .btn+.btn{     margin-left: 5px;}
+
+        /**footer样式**/
+        #footer{
+            width:100%;
+            margin:10px auto;
+            border-bottom: 100px;
+        }
+        #footer .btn  {
+            margin-left: 5px;
+        }
+        #footer .btn-toolbar {
+            width:610px;
+            margin:0 auto;
+        }
+
+
+
+
+        @media (min-width:767px){
+            .body{ width:730px;}
+            .header{ height:180px;}
+
+            /**右侧内容区**/
+            /*#main{  width:767px; }*/
+            .contentBox{width:767px;}
+            .table{ width:640px;margin-left: 10px;}
+
+
+
+        }
+        @media (min-width:960px){
+            .body{ width:920px;}
+            .header{ height:205px;}
+            .contentBox{width:960px;}
+            .table{ width:800px;}
+
+        }
+        @media (min-width:1080px){
+            .body{ width:1040px;}
+            .header{ height:230px;}
+            .contentBox{width:1080px;}
+            .table{ width:900px;margin-left: 20px;}
+
+        }
+        @media (min-width:1210px){
+            .body{ width:1180px;}
+            .header{ height:260px;}
+            .contentBox{width:1210px;}
+            .table{ width:1000px;}
+
+        }
+        @media (min-width:1440px){
+            .body{ width:1400px;}
+            .header{ height:300px;}
+            .contentBox{width:1440px;}
+            .table{ width:1298px;margin-left: 30px;}
+
+        }
+    </style>
+</head>
+<script type="text/babel">
+
+
+
+
+
+    const {Button,DropdownButton,MenuItem,ButtonToolbar,ButtonGroup,Clearfix,Checkbox,Radio,FormGroup,ControlLabel,FormControl, HelpBlock,SplitButton   } = ReactBootstrap;
+    /**PageHeader  **/
+            const{ PageHeader}=ReactBootstrap;
+    const pageHeaderInstance = (
+        <PageHeader>Example page header <small>Subtext for header</small></PageHeader>
+    );
+    ReactDOM.render(pageHeaderInstance, document.getElementById('header'));
+
+    const ButtonsInstance = (
+        <FormGroup controlId="formControlsSelect">
+            <ControlLabel>条件检索</ControlLabel>
+            <div  className="clearfix">
+                <div className="tiaojianBox tiaojianBox1">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">性别</option>
+                        <option value="other">年龄</option>
+                        <option value="other">加入时间</option>
+                        <option value="other">...</option>
+                    </FormControl>
+                </div>
+                <div className="tiaojianBox tiaojianBox2">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">等于</option>
+                        <option value="other">小于</option>
+                        <option value="other">大于</option>
+                        <option value="other">选择一个范围</option>
+                        <option value="other">...</option>
+                    </FormControl>
+                </div>
+
+                <div className="tiaojianBox tiaojianBox3">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">不限</option>
+                        <option value="other">男</option>
+                        <option value="other">女</option>
+                        <option value="other">其他</option>
+                    </FormControl>
+                </div>
+            </div>
+            <div  className="clearfix">
+                <div className="tiaojianBox tiaojianBox1">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">年龄</option>
+                        <option value="other">性别</option>
+                        <option value="other">加入时间</option>
+                        <option value="other">...</option>
+                    </FormControl>
+                </div>
+                <div className="tiaojianBox tiaojianBox2">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">选择一个范围</option>
+                        <option value="other">等于</option>
+                        <option value="other">小于</option>
+                        <option value="other">大于</option>
+                        <option value="other">...</option>
+                    </FormControl>
+                </div>
+
+                <div className="tiaojianBox tiaojianBox3">
+                    <FormGroup controlId="formControlsSelect">
+                        <FormControl componentClass="select" placeholder="select" style={{  }}>
+                            <option value="select">请选择您所在的年龄段</option>
+                            <option value="other">18-27</option>
+                            <option value="other">25-35</option>
+                            <option value="other">32-38</option>
+                            <option value="other">36-43</option>
+                            <option value="other">40-46</option>
+                            <option value="other">43-50</option>
+                            <option value="other">48-55</option>
+                            <option value="other">52-60</option>
+                            <option value="other">56-64</option>
+                            <option value="other">65及以上</option>
+                        </FormControl>
+                    </FormGroup>
+                </div>
+            </div>
+
+            <div  className="clearfix">
+                <div className="tiaojianBox tiaojianBox1">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">加入时间</option>
+                        <option value="other">年龄</option>
+                        <option value="other">性别</option>
+                        <option value="other">...</option>
+                    </FormControl>
+                </div>
+                <div className="tiaojianBox tiaojianBox2">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">等于</option>
+                        <option value="other">小于</option>
+                        <option value="other">大于</option>
+                        <option value="other">选择一个范围</option>
+                        <option value="other">...</option>
+                    </FormControl>
+                </div>
+
+                <div className="tiaojianBox tiaojianBox3">
+                    <FormControl componentClass="select" placeholder="select">
+
+                        <option value="select">NULL</option>
+                        <option value="other">男</option>
+                        <option value="other">女</option>
+                    </FormControl>
+                </div>
+            </div>
+
+        </FormGroup>
+    );
+    ReactDOM.render(ButtonsInstance,document.getElementById('dropDown1') );
+
+    /**性别单选按钮**/
+    const SexRadio=React.createClass({
+        getInitialState:function(){
+            return {}
+        },
+        render:function(){
+            return (
+                <div className="z-radio-box" style={{fontWeight:700}}>
+                    性 别：
+                    <label for="sex_0">
+                        <input type="radio" id="sex_0"  value="0" name="sex" defaultChecked/> 男 &nbsp;
+                    </label>
+                    <label for="sex_1">
+                        <input type="radio" id="sex_1"  value="1" name="sex" /> 女
+                    </label>
+                </div>
+            );
+        }
+    });
+    ReactDOM.render(<SexRadio/>,document.getElementById('SexRadio'));
+
+
+    /**infoBar  START**/
+    var {  StyleSheet, Text, View } = React;
+    function FieldGroup({ id, label, help, ...props }) {
+        return (
+            <FormGroup controlId={id}>
+                <ControlLabel>{label}</ControlLabel>
+                <FormControl {...props} />
+                {help && <HelpBlock>{help}</HelpBlock>}
+            </FormGroup>
+        );
+    }
+  const FormInstance = (
+    <form>
+        <FieldGroup id="formControlsText" type="text" label="请输入用户名" placeholder="Enter User Name" />
+        <FieldGroup id="formControlsEmail" type="email" label="邮箱地址" placeholder="Enter your email" />
+        <FieldGroup id="formControlsPassword" label="密码" type="password"  />
+        <FieldGroup id="formControlsPassword" label="重复密码" type="password"  />
+        <FieldGroup id="formControlsFile" type="file" label="上传头像" help="请上传一张图片作为您的用户头像。" />
+        <Checkbox checked readOnly >选好了 ，可以上传!</Checkbox>
+
+        <ControlLabel>性别:  &nbsp;</ControlLabel>
+        <Radio name="sex01" defaultChecked   readOnly inline >    男    </Radio>
+        <Radio name="sex02"  readOnly inline>    女    </Radio>
+
+
+        <FormGroup controlId="formControlsSelect">
+            <ControlLabel style={{ }} >年龄段</ControlLabel>
+            <FormControl componentClass="select" placeholder="select" style={{  }}>
+                <option value="select">请选择您所在的年龄段</option>
+                <option value="other">18-27</option>
+                <option value="other">25-35</option>
+                <option value="other">32-38</option>
+                <option value="other">36-43</option>
+                <option value="other">40-46</option>
+                <option value="other">43-50</option>
+                <option value="other">48-55</option>
+                <option value="other">52-60</option>
+                <option value="other">56-64</option>
+                <option value="other">65及以上</option>
+            </FormControl>
+        </FormGroup>
+
+
+
+        <FormGroup controlId="formControlsSelectMultiple">
+            <ControlLabel>您喜欢的音乐有哪些？</ControlLabel>
+            <FormControl componentClass="select" multiple>
+                <option value="select">select (multiple)</option>
+                <option value="other">古典音乐</option>
+                <option value="other">流行音乐 </option>
+                <option value="other">蓝调忧郁</option>
+                <option value="select">摇滚乐</option>
+                <option value="other">爵士乐 </option>
+                <option value="other">管弦乐队</option>
+                <option value="other">现代音乐</option>
+                <option value="other">民族音乐</option>
+                <option value="other">乡村音乐</option>
+                <option value="other">瑞格音乐</option>
+                <option value="other">新世纪音乐</option>
+                <option value="other">...</option>
+            </FormControl>
+        </FormGroup>
+
+        <FormGroup controlId="formControlsTextarea">
+            <ControlLabel>自我展现</ControlLabel>
+            <FormControl componentClass="textarea" placeholder="请描述一下自己或写下一段自己喜欢的话语。" />
+        </FormGroup>
+
+        <FormGroup>
+            <ControlLabel>Static text</ControlLabel>
+            <FormControl.Static>
+                email@example.com
+            </FormControl.Static>
+        </FormGroup>
+
+
+        <Button type="submit">
+            Submit
+        </Button>
+    </form>
+  );
+
+  ReactDOM.render(FormInstance, document.getElementById('infoBar'));
+    /**infoBar  END**/
+
+
+    //页面初始数据
+ var RepositoryList1 = React.createClass({
+    getInitialState: function() {
+        return  {
+            loading: true,
+            error: null,
+            data: null
+        }
+    },
+   
+    componentDidMount: function() {
+        $.getJSON(this.props.source)
+        .done(function(data) {
+            this.setState({
+                loading: false,
+                data: data
+               
+            })
+        }.bind(this))
+        .fail(function(error) {
+            this.setState({
+                loading: false,
+                error: error
+            });
+        }.bind(this));
+    },
+    render: function() {
+        if(this.state.loading) {
+        	
+            return <p className="tc">loading...</p>;
+        }
+
+        if(this.state.error !== null){
+            return <p className="tc">Error: {this.state.error.message}</p>
+        }
+
+        var data = this.state.data || {},
+                 
+         
+            
+           
+            reposList = data.map(function(item, index, arr) {
+                return (
+                <tbody>
+                    <tr key={index}>
+                       <td>{item.menuname}</td>
+                       <td>{item.icon}</td>
+                       <td>{item.menuid}</td>
+                        
+                    </tr>
+                </tbody>
+                )
+                
+            });
+
+        return (
+            <div className="repos-list">
+            	
+                
+                
+                <table >{reposList}</table>
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(<RepositoryList1 	source="mock/data.json"/>, document.getElementById('main'));
+
+   //主导航横向导航
+    var ColorButton = React.createClass({
+   
+    render: function () {
+        return (
+            <ButtonGroup justified>
+        <Button href="#" onClick={this.handClick}>Left</Button>
+            <Button href="#" onClick={this.handleClick}>Middle</Button>
+            <Button href="#" onClick={this.handClick}>Left</Button>
+            <Button href="#" onClick={this.handleClick}>Middle</Button>
+            <Button href="#" onClick={this.handClick}>Left</Button>
+            <Button href="#" onClick={this.handleClick}>Middle</Button>
+        </ButtonGroup>
+        )
+    },
+    handClick:function(event){
+    	      
+        var RepositoryList1 = React.createClass({
+    getInitialState: function() {
+        return  {
+            loading: true,
+            error: null,
+            data: null
+        }
+    },
+   
+    componentDidMount: function() {
+        $.getJSON(this.props.source)
+        .done(function(data) {
+            this.setState({
+                loading: false,
+                data: data
+               
+            })
+        }.bind(this))
+        .fail(function(error) {
+            this.setState({
+                loading: false,
+                error: error
+            });
+        }.bind(this));
+    },
+    render: function() {
+        if(this.state.loading) {
+        	
+            return <p className="tc">loading...</p>;
+        }
+
+        if(this.state.error !== null){
+            return <p className="tc">Error: {this.state.error.message}</p>
+        }
+
+        var data = this.state.data || {},
+                 
+         
+            
+           
+            reposList = data.map(function(item, index, arr) {
+                return (
+                <tbody>
+                    <tr key={index}>
+                       <td>{item.menuname}</td>
+                       <td>{item.icon}</td>
+                       <td>{item.menuid}</td>
+                        
+                    </tr>
+                </tbody>
+                )
+                
+            });
+
+        return (
+            <div className="repos-list">
+            	
+                
+                
+                <table >{reposList}</table>
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(<RepositoryList1	source="mock/data.json"/>, document.getElementById('main'));
+
+
+
+    },
+    handleClick: function (event) {
+        
+        
+        var RepositoryList = React.createClass({
+    getInitialState: function() {
+        return  {
+            loading: true,
+            error: null,
+            data: null
+        }
+    },
+   
+    componentDidMount: function() {
+        $.getJSON(this.props.source)
+        .done(function(data) {
+            this.setState({
+                loading: false,
+                data: data
+               
+            })
+        }.bind(this))
+        .fail(function(error) {
+            this.setState({
+                loading: false,
+                error: error
+            });
+        }.bind(this));
+    },
+    render: function() {
+        if(this.state.loading) {
+        	
+            return <p className="tc">loading...</p>;
+        }
+
+        if(this.state.error !== null){
+            return <p className="tc">Error: {this.state.error.message}</p>
+        }
+
+        var data = this.state.data || {},
+                 
+         
+            
+           
+            reposList = data.map(function(item, index, arr) {
+                return (
+                <tbody>
+                    <tr key={index}>
+                       <td>{item.title}</td>
+                       <td>{item.item}</td>
+                       <td>{item.number}</td>
+                        
+                    </tr>
+                </tbody>
+                )
+                
+            });
+
+        return (
+            <div className="repos-list">
+            	
+                
+                
+                <table >{reposList}</table>
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(<RepositoryList source="mock/trip.json"/>, document.getElementById('main'));
+
+
+
+        }
+	    
+});
+
+
+
+
+    ReactDOM.render(<ColorButton/>,
+		document.getElementById('topMenu')
+	);
+     //竖排导航二级导航
+    const buttonGroupInstance = (
+        <ButtonGroup vertical>
+            <Button>Button</Button>
+            <Button>Button</Button>
+            <DropdownButton title="Dropdown" id="bg-vertical-dropdown-1">
+                <MenuItem eventKey="1">Dropdown link</MenuItem>
+                <MenuItem eventKey="2">Dropdown link</MenuItem>
+            </DropdownButton>
+            <Button>Button</Button>
+            <Button>Button</Button>
+            <DropdownButton title="Dropdown" id="bg-vertical-dropdown-2">
+                <MenuItem eventKey="1">Dropdown link</MenuItem>
+                <MenuItem eventKey="2">Dropdown link</MenuItem>
+            </DropdownButton>
+            <DropdownButton title="Dropdown" id="bg-vertical-dropdown-3">
+                <MenuItem eventKey="1">Dropdown link</MenuItem>
+                <MenuItem eventKey="2">Dropdown link</MenuItem>
+            </DropdownButton>
+        </ButtonGroup>
+    );
+
+    ReactDOM.render(buttonGroupInstance,
+            document.getElementById('leftSideNav')
+    );
+
+
+
+    function onSelectAlert(eventKey) {
+        alert(`Alert from menu item.\neventKey: ${eventKey}`);
+    }
+    const MenuItems = (
+       <Clearfix>
+            <ul className="dropdown-menu open">
+                <MenuItem header>Header</MenuItem>
+                <MenuItem>link</MenuItem>
+                <MenuItem divider/>
+                <MenuItem header>Header</MenuItem>
+                <MenuItem>link</MenuItem>
+                <MenuItem disabled>disabled</MenuItem>
+                <MenuItem title="See? I have a title.">
+                        link with title
+                </MenuItem>
+                <MenuItem eventKey={1} href="#someHref" onSelect={onSelectAlert}>
+                        link that alerts
+                </MenuItem>
+            </ul>
+       </Clearfix>
+    );
+    ReactDOM.render(MenuItems, document.getElementById('footer'));
+
+
+
+       //   底部切换按钮  
+    /** pageBar START**/
+
+    const {Pagination}= ReactBootstrap;
+    const PaginationAdvanced = React.createClass({
+        getInitialState() {
+            return {
+                activePage: 1
+            }
+        },
+
+        handleSelect(eventKey) {
+            this.setState({
+                activePage: eventKey
+            });
+        },
+
+        render() {
+            return (
+                <Pagination
+                prev
+                next
+                first
+                last
+                ellipsis
+                boundaryLinks
+                items={20}
+                maxButtons={5}
+                activePage={this.state.activePage}
+            onSelect={this.handleSelect} />
+            );
+        }
+    });
+
+    ReactDOM.render(<PaginationAdvanced />, document.getElementById('footer'));
+    /** pageBar END**/
+
+
+
+</script>
+<body>
+<div id="body" class="body">
+    <div id="header" class="header"> </div>
+    <div id="dropDown1"></div>
+    <div id="SexRadio1"></div>
+    <div id="SexRadio"></div>
+    <div id="infoBar" style="width:75%;max-width:600px;margin:0 auto;margin-bottom:20px;"></div>
+    <div id="topMenu"></div>
+    <div id="mainbox">
+        <div id="leftMenu">
+            <div id="leftSideNav"></div>
+        </div>
+        <div id="main"></div>
+        <div style=" clear:both;height:0;"></div>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>
